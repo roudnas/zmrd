@@ -18,6 +18,8 @@ class TaskManager {
             } : {});
             if (interaction)
                 interaction.reply("👍👍👍");
+            else
+                ch.send("Aktivni tasky:");
             ch.send({
                 embeds: [await this.getUserEmbed(data)],
                 //components: [await getButtons(data)]
