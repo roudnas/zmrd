@@ -26,7 +26,7 @@ module.exports = {
 				name: interaction.options.getString("name"),
 				for: interaction.options.getUser("target") ? interaction.options.getUser("target").id : null
 			});
-			interaction.reply("MAS TO TAM");
+			interaction.reply(`Task zadanej bro`);
 		} catch (e) {
 			console.error(e);
 			interaction.reply("NECO SE POSRALO");

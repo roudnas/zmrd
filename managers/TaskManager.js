@@ -16,6 +16,8 @@ class TaskManager {
                     for: user.id
                 }
             } : {});
+            if (interaction)
+                interaction.reply("👍👍👍");
             ch.send({
                 embeds: [await this.getUserEmbed(data)],
                 //components: [await getButtons(data)]
